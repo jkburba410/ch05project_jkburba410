@@ -1,3 +1,4 @@
+// <p>This function checks how many required fields are empty.</p>
 function checkMissing() {
     const requiredFields = document.querySelectorAll('.required');
     let missingCount = 0;
@@ -17,6 +18,7 @@ function checkMissing() {
     return missingCount === 0;
 }
 
+// <p>This function checks if the email has at least 8 characters.</p>
 function validateEmail() {
     const emailField = document.getElementById('email');
     const email = emailField.value.trim();
@@ -30,6 +32,7 @@ function validateEmail() {
     }
 }
 
+// <p>This function runs both validation checks on form submit.</p>
 function validateForm() {
     const noMissing = checkMissing();
     const emailValid = validateEmail();
@@ -38,6 +41,7 @@ function validateForm() {
         alert("Form submission blocked. Please fill all required fields correctly.");
     } else {
         alert("Form submitted successfully!");
+        // You can add form submission code here.
     }
 }
 
