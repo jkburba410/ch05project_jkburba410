@@ -1,0 +1,14 @@
+.required {
+    border: 2px solid yellow;
+}
+
+.invalid-email {
+    border: 2px solid red !important;
+}
+
+#missing-count {
+    color: red;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
